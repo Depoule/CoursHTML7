@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Exercice 7</title>
+</head>
+<body>
+  <form method="post">
+    <fieldset class="identite">
+      <legend class="identite">Votre identité</legend>
+      <p>
+      <label for="Nom">1. Nom : </label>
+      <input type="text" name="Nom" id="Nom" placeholder="Nom" size="30" /></br>
+      <label for="Prénom">2. Prénom : </label>
+      <input type="text" name="Prénom" id="Prénom" placeholder="Prénom" size="30" /></br>
+      <label for="Adresse mail">3. Adresse mail : </label>
+      <input type="email" name="Adresse mail" id="Adresse mail" placeholder="Adresse mail" size="30" /></br>
+      </p>
+    </fieldset>
+  </form>
+  <form method="post">
+    <fieldset class="livraison">
+      <legend class="livraison">Adresse de livraison</legend>
+      <p>
+      <label for="Adresse">1. Adresse : </label>
+      <textarea id="Adresse" name="Adresse" cols="15" rows="4"></textarea></br>
+      <label for="Code postal">2. Code postal : </label>
+      <input type="text" name="Code postal" id="Code postal" placeholder="Code postal" size="30" /></br>
+      <label for="Ville">3. Ville : </label>
+      <input type="text" name="Ville" id="Ville" placeholder="Ville" size="30" /></br>
+      </p>
+    </fieldset>
+  </form>
+  <form method="post">
+    <fieldset class="Règlement">
+      <legend class="Règlement">Informations de réglement</legend>
+      <p>
+      <label>1. Type de carte bancaire : </label></br>
+      <ol>
+      <input id="visa" type="radio" name="typecarte"> <label for="visa">VISA</label> <br />
+      <input id="mastercard" type="radio" name="typecarte"> <label for="mastercard">Mastercard</label> <br />
+      </ol>
+      <label for="numcarte">2. Numéro de carte :</label>
+      <input id="numcarte" type="text" size="30" name="numcarte" placeholder="Numéro de carte" /><br />
+      <label for="code">3. Code de sécurité :</label>
+      <input id="code" type="password" name="code" size="30" placeholder="Code de sécurité" /><br />
+      <label for="nomtitulaire">4. Nom du titulaire</label>
+      <input id="nomtitulaire" type="text" name="nomtitulaire" size="30" name="nomtitulaire" placeholder="Nom du titulaire" />
+      </p>
+    </fieldset>
+  </form>
+    <input type="submit" value="J'achète !" />
+</body>
+</html>
